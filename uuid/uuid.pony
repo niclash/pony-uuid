@@ -12,6 +12,9 @@ use "itertools"
 use "random"
 use "time"
 
+use @ponyint_hash_block64[U64](p:Pointer[U8 val] tag, size:USize)
+use @ponyint_hash_block[USize](p:Pointer[U8 val] tag, size:USize)
+
 class val UUID is Equatable[UUID]
   """
   An UUID. Currently it can be used to generate UUIDs of versions 3, 4 and 5.
